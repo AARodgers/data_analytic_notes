@@ -1,4 +1,42 @@
 2024-04-09
 Notes on SQL
 
+Relational databases:
+use SQL (Structured Query Language) for querying and managing data
+MySQL, Oracle, and PostgreSQL
+
+NoSQL databases:
+designed for large-scale
+store massive amts of unstructured data in document, key-value, or graph formats
+
+Object-oriented databases:
+store complex data structures such as objects with methods and attributes
+db4o and ObjectDB
+
+Columnar databases:
+store data in columns rather than rows and are optimized for querying large datasets
+with complex queries
+data warehousing and business intelligence applications where performance is critical
+Apache Cassandra and Amazon Redshift
+
+Time-series databases:
+handle large volumes of time-series data, such as data from sensors or financial transactions
+optimized for handling data that is continuously generated over time and are often used in
+Internet of Things (IoT) and financial applications
+InfluxDB and OpenTSDB
+
+Document databases:
+store data in a semi-structured format, such as JSON or XML, and are often used in
+web applications where data is generated dynamically
+handle unstructured data and are widely used in content management
+systems or e-commerce applications
+MongoDB and Couchbase
+
+Graph databases:
+store data in a graph format, with nodes representing entities and edges
+representing relationships between them
+optimized for querying complex, connected data and are often used in social networks,
+recommendation engines, and fraud detection applications
+Neo4j and ArangoDB
+
 
