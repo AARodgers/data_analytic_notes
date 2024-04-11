@@ -1,0 +1,94 @@
+2024-04-09
+Notes on SQL
+
+Relational databases:
+use SQL (Structured Query Language) for querying and managing data
+MySQL, Oracle, and PostgreSQL
+
+NoSQL databases:
+designed for large-scale
+store massive amts of unstructured data in document, key-value, or graph formats
+
+Object-oriented databases:
+store complex data structures such as objects with methods and attributes
+db4o and ObjectDB
+
+Columnar databases:
+store data in columns rather than rows and are optimized for querying large datasets
+with complex queries
+data warehousing and business intelligence applications where performance is critical
+Apache Cassandra and Amazon Redshift
+
+Time-series databases:
+handle large volumes of time-series data, such as data from sensors or financial transactions
+optimized for handling data that is continuously generated over time and are often used in
+Internet of Things (IoT) and financial applications
+InfluxDB and OpenTSDB
+
+Document databases:
+store data in a semi-structured format, such as JSON or XML, and are often used in
+web applications where data is generated dynamically
+handle unstructured data and are widely used in content management
+systems or e-commerce applications
+MongoDB and Couchbase
+
+Graph databases:
+store data in a graph format, with nodes representing entities and edges
+representing relationships between them
+optimized for querying complex, connected data and are often used in social networks,
+recommendation engines, and fraud detection applications
+Neo4j and ArangoDB
+
+Exercise:
+
+Write SQL queries to answer the following questions:
+
+a. What is the current quantity in stock for each product?
+
+b. What is the total cost and revenue for each sale?
+
+c. Which products have a quantity in stock less than 10?
+
+5
+
+5
+Write SQL queries to update the database for the following scenarios:
+
+a. A new product has been added to the inventory
+
+b. A supplier's contact information has changed
+
+c. A sale has been made and the quantity in stock for the corresponding product needs
+to be updated
+
+In SQLite and other SQL database systems, the REAL data type is used to store
+floating-point numbers, which represent numbers with decimal points
+
+    NN: Not Null Constraint
+        Indicates that a column cannot contain NULL values. It enforces that every row in the table must have a value for this column.
+        Example: column_name INT NOT NULL
+
+    PK: Primary Key Constraint
+        Indicates that a column or a combination of columns uniquely identifies each row in the table. It enforces uniqueness and provides fast access to rows.
+        Example: column_name INT PRIMARY KEY
+
+    AI: Auto-Increment Property
+        Typically used in conjunction with the Primary Key Constraint. It automatically generates a unique value for the column whenever a new row is inserted into the table.
+        Example: id INT PRIMARY KEY AUTO_INCREMENT
+
+    U: Unique Constraint
+        Ensures that all values in the column are unique (except for NULL values, unless the column also has a NOT NULL constraint).
+        Example: column_name INT UNIQUE
+
+    Integer:
+        Integer data type stores whole numbers without decimal points.
+        Integers can be signed or unsigned, indicating whether they can represent negative values or not.
+        Examples of integer data types include INT, INTEGER, SMALLINT, BIGINT, etc.
+        Integer data types have a fixed size, which typically depends on the specific implementation and platform. For example, INT usually represents a 32-bit signed integer.
+
+    Number:
+        "Number" is a more generic term and can refer to various numeric data types, including integers, floating-point numbers, decimals, etc.
+        In some SQL databases, such as Oracle, the NUMBER data type is used to store numeric values that can have decimal points or fractional parts.
+        The NUMBER data type in Oracle allows you to specify precision (total number of digits) and scale (number of digits to the right of the decimal point) for the numeric values.
+        Unlike integers, numbers can represent both whole numbers and values with decimal points.
+        Example: NUMBER(10,2) indicates a numeric value with a total of 10 digits, with 2 digits to the right of the decimal point.
