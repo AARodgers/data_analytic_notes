@@ -1,0 +1,22 @@
+SELECT statement is used to retrieve data from one or more tables in a database
+to retrieve all customer information from a table called "Customers,":
+SELECT * FROM Customers;
+
+WHERE clause is used to filter data based on certain conditions ( in rows)
+to retrieve only the customer information for customers who live in New York
+SELECT * FROM Customers WHERE city = 'New York';
+
+GROUP BY clause: The GROUP BY clause is used to group data based on one or more column
+to retrieve the total revenue for each product category from a table called "Orders," you can use the following SQL code:
+SELECT category, SUM(revenue) as total_revenue FROM Orders GROUP BY category;
+
+JOIN clause: The JOIN clause is used to combine data from two or more tables based on a common column. For example, to retrieve
+the customer name and order details for all orders, you can use the following SQL code:
+SELECT Customers.name, Orders.order_date, Orders.order_total FROM Customers
+JOIN Orders ON Customer.id = Orders.customer.id;
+
+Another join example, if have a patient table with a location foreign key from location table and you want patient info and their
+location.
+SELECT p.patient_name, p.patient_age, l.location_name
+FROM Patients p
+JOIN Locations l ON p.location_id = l.location_id;
